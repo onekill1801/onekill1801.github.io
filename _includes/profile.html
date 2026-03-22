@@ -1,0 +1,23 @@
+<section class="profile-card" aria-label="Hồ sơ">
+  <img
+    class="profile-avatar"
+    src="{{ site.profile.avatar }}"
+    width="112"
+    height="112"
+    alt="Ảnh đại diện GitHub của {{ site.profile.name | escape }}"
+    loading="lazy"
+    decoding="async"
+  >
+  <div class="profile-text">
+    <h1 class="profile-name">{{ site.profile.name | escape }}</h1>
+    <p class="profile-username">
+      <a href="https://github.com/{{ site.profile.username }}">@{{ site.profile.username }}</a>
+    </p>
+    <p class="profile-tagline">{{ site.profile.tagline | escape }}</p>
+    <p class="profile-meta">
+      <a href="https://github.com/{{ site.profile.username }}?tab=repositories">Kho lưu trữ</a>
+      <span class="profile-sep" aria-hidden="true">·</span>
+      <a href="{{ site.profile.github_url }}">Hồ sơ GitHub</a>
+    </p>
+  </div>
+</section>

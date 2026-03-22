@@ -1,3 +1,57 @@
+.profile-card
+  display: flex
+  gap: 1.5em
+  align-items: flex-start
+  padding: 0 0 1.75em
+  margin: 0 0 1.75em
+  border-bottom: 1px solid reduce(14)
+
+.profile-avatar
+  width: 7em
+  height: 7em
+  border-radius: 50%
+  flex-shrink: 0
+  box-shadow: 0 0 0 1px reduce(18)
+  object-fit: cover
+
+.profile-text
+  min-width: 0
+
+.profile-name
+  font-size: 1.65em
+  font-weight: $heading-weight
+  margin: 0 0 .2em
+  line-height: 1.25
+
+.profile-username
+  margin: 0 0 .6em
+  font-size: 1.05em
+
+.profile-username a
+  color: reduce(100)
+
+.profile-tagline
+  margin: 0 0 .75em
+
+.profile-meta
+  margin: 0
+  font-size: .95em
+
+.profile-meta a
+  color: $link-color
+
+.profile-sep
+  margin: 0 .35em
+  opacity: .55
+
+@media (max-width: 32em)
+  .profile-card
+    flex-direction: column
+    align-items: center
+    text-align: center
+  .profile-username a
+    word-break: break-all
+
 .title
   font-size: 1.25em
 

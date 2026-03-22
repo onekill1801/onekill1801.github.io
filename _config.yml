@@ -1,10 +1,20 @@
-title: "Blog Title"
-author: "Blog Author"
-description: "Made with <b style=\"color: #f45;\">&lt;3</b>"
-permalink: https://www.google.com/
-lang: "en"
+title: "Trần Chung"
+author: "Trần Chung"
+description: "Trang GitHub Pages cá nhân · @onekill1801"
+url: "https://onekill1801.github.io"
+baseurl: ""
+permalink: pretty
+lang: "vi"
 excerpt_separator: "\n\n\n"
-date_format: "%B %d, %Y"
+date_format: "%d/%m/%Y"
+
+# Hồ sơ hiển thị trên trang chủ (đồng bộ với github.com/onekill1801)
+profile:
+  name: "Trần Chung"
+  username: "onekill1801"
+  github_url: "https://github.com/onekill1801"
+  avatar: "https://avatars.githubusercontent.com/u/28950565?v=4"
+  tagline: "Tài khoản GitHub cá nhân — ghi chép và chia sẻ trên GitHub Pages."
 
 # Layout
 
@@ -16,13 +26,12 @@ minimal: true             # use a dark header
 # Menu
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
-  - {file: "index.html"}
-  - {file: "README.md"}
+  - {file: "index.html", title: "Trang chủ"}
+  - {file: "README.md", title: "Giới thiệu"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
-  - {title: Mail, icon: envelope, url: "mailto:niklasbuschmann@users.noreply.github.com"}
-  - {title: Github, icon: github, url: "https://github.com/onekill1801/onekill1801.github.io"}
-  - {title: Subscribe, icon: rss, url: "/feed.xml"}
+  - {title: GitHub, icon: github, url: "https://github.com/onekill1801"}
+  - {title: RSS, icon: rss, url: "/feed.xml"}
 
 comments:
 #  disqus_shortname: ""    # see https://disqus.com/
